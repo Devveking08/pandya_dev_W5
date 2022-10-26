@@ -44,6 +44,8 @@ header {
 
 .characters li h5 {
                 padding: 14px 8px;
+                color: white;
+                text-decoration: none;
 }
 
 .characters li { display: inline-block;
@@ -85,14 +87,14 @@ header {
 .red-bumber {height: 6px; background-color:red;}
 
 
-article { padding: 20px;}
+.info { padding: 20px;}
 
-article h3 {
+.info h3 {
         font-size: 2em;
         text-align: center;
         margin-bottom: 14px;
 }
-article p{
+.info p{
         width: 80%;
         font-size: 10px;
         line-height: 1,2;
@@ -115,3 +117,67 @@ footer {
                 background-color: grey;
 }
 
+/* light bob style  */
+
+.lightbob {
+            display: none; 
+            width: 100vw; /* viewport width its the width of the browser window */
+            height: 100vh; /* viewport height its the height of browser window */
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            background-color: rgba(0 ,0 ,0 ,0.7);
+            background-repeat: no-repeat;
+            background-position: 40px bottom;
+            background-size: 55Vh;
+}
+
+.lb_close {
+
+            color: white;
+              
+            
+
+            text-decoration: none;
+
+            position: relative;
+            top: 2px;
+            left:95%;
+            font-weight: bolder;
+
+
+
+}
+
+.lb_close:hover {
+
+                opacity: 0.5;
+
+}
+
+.lightbob article {
+                    width: 55 ;
+                    margin-left: 48%;
+                    padding-top: 50px;;
+}
+
+.lb_text, .lb_heading { text-align: left;
+}
+
+.lb_text {
+            line-height: 1.6;
+            margin-left: 0;
+            padding-top: 2em;
+}
+
+#lightBob {
+            background-image: url("../images/Cap_LB_Bg.png");
+}
+#lightBob2 {
+        background-image: url("../images/Thor_LB_Bg.png");
+}
+.lightbob:target {
+            display: block;
+}
